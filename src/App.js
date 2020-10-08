@@ -7,6 +7,7 @@ import firebase from 'firebase';
 import FlipMove from 'react-flip-move';
 import SendIcon from '@material-ui/icons/Send';
 import { IconButton } from '@material-ui/core';
+import Logo from './facebook-messenger-logo-png.png';
 
 
 function App() {
@@ -52,8 +53,9 @@ function App() {
   return (
     <div className="App">
       {/* <img src="htttps://facebookbrand.com/wp-content/uploads/2018/09/Header-e1538151782912.png?w=100&h=100" /> */}
-      <h1>Messenger Clone</h1>
-      <h3>Hey...! {username}</h3>
+      <img className="app__logo" src={Logo} alt="MyBurger" />
+      <h2>Messenger Clone</h2>
+      <h3>Welcome..! {username}</h3>
 
       <form className="app__form">
         <FormControl className="app__formControls">          
